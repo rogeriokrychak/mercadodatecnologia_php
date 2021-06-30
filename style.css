@@ -1,0 +1,80 @@
+
+#img{
+    width: 198px;
+    height:140px;
+    float: left;
+}
+
+/*Style of header*/
+header {
+    background-color: gray;
+    padding: 1px;
+    text-align: center;
+    font-size: 28px;
+}
+
+a:link{ 
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    font-weight: bolder;
+}
+
+/*Style for flexboxes*/
+section{
+    display: -webkit-flex;
+    display: flex;
+    
+}
+
+/*style for navigation menu*/
+nav{
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #ccc;
+    max-width: 200px;
+    height: 470px;
+}
+
+/*Style the list inside the menu*/
+nav ul{
+    list-style-type: none;
+    padding: 10px;
+    color: black;
+}
+
+/*Style for article*/
+article{
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-image: url(pexels-yaroslav-shuraev-4472968-1280.jpg);
+    background-position: 35%;
+    
+}
+
+#textinitial{
+    font-size: 25px;
+    text-align: left;
+    padding-top: 60px;
+    color: black;
+    list-style-type: none;
+}
+
+/*Style for footer*/
+footer{
+    background-color: gray;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 700px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
